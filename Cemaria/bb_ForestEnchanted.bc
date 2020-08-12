@@ -1,0 +1,264 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+
+ResourceInheritance: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 6
+
+BiomeRarity: 70
+
+BiomeColor: #9EC4DE
+
+ReplaceToBiomeName: Forest
+
+####################
+# Isle biomes only #
+####################
+
+IsleInBiome: 
+
+BiomeSizeWhenIsle: 6
+
+BiomeRarityWhenIsle: 70
+
+######################
+# Border biomes only #
+######################
+
+BiomeIsBorder: 
+
+NotBorderNear: 
+
+BiomeSizeWhenBorder: 6
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeHeight: -1.66
+
+BiomeVolatility: 0.3
+
+SmoothRadius: 4
+
+MaxAverageHeight: 0.0
+
+MaxAverageDepth: 0.0
+
+Volatility1: -1.0
+
+Volatility2: -1.0
+
+VolatilityWeight1: 2.52
+
+VolatilityWeight2: 2.45
+
+DisableBiomeHeight: false
+
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+########################
+# ImprovedRivers:false #
+########################
+
+RiverBiome: 
+
+#######################
+# ImprovedRivers:true #
+#######################
+
+RiverHeight: -2.0
+
+RiverVolatility: 0.1
+
+RiverWaterLevel: 63
+
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StoneBlock: minecraft:stone
+
+SurfaceBlock: minecraft:grass
+
+GroundBlock: minecraft:dirt
+
+SurfaceAndGroundControl: 
+
+ReplacedBlocks: (minecraft:water,minecraft:stone,32,51),(minecraft:air,minecraft:lava,1,10)
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: false
+
+WaterLevelMax: 63
+
+WaterLevelMin: 40
+
+WaterBlock: minecraft:water
+
+IceBlock: minecraft:ice
+
+CooledLavaBlock: minecraft:lava
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeTemperature: 0.7
+
+BiomeWetness: 0.8
+
+SkyColor: #B8EEF5
+
+WaterColor: #C0F786
+
+GrassColor: #80D9C3
+
+GrassColorIsMultiplier: false
+
+FoliageColor: #9EC4DE
+
+FoliageColorIsMultiplier: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Dungeon(8,100.0,0,160)
+Ore(minecraft:coal_ore,17,20,100.0,0,127,minecraft:stone:0)
+Ore(minecraft:iron_ore,9,20,100.0,0,63,minecraft:stone:0)
+Ore(minecraft:gold_ore,9,2,100.0,0,31,minecraft:stone:0)
+Ore(minecraft:redstone_ore,8,8,100.0,0,15,minecraft:stone:0)
+Ore(minecraft:diamond_ore,8,1,100.0,0,15,minecraft:stone:0)
+Ore(minecraft:lapis_ore,7,1,100.0,0,15,minecraft:stone:0)
+Ore(minecraft:emerald_ore,7,1,75.0,4,32,minecraft:stone:0)
+Ore(minecraft:dirt,32,20,50.0,0,255,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:gravel,32,10,50.0,0,255,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:clay,8,10,50.0,0,255,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:sand,8,10,50.0,0,255,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:stone:5,32,20,100.0,0,69,minecraft:stone:0)
+Ore(minecraft:stone:3,32,20,100.0,0,69,minecraft:stone:0)
+Ore(minecraft:stone:1,32,20,100.0,0,69,minecraft:stone:0)
+CustomObject(cavepocket1Copy,cavepocket2Copy,cavepocket3Copy,cavepocket9Copy,cavepocket4,cavepocket5,cavepocket6,cavepocket7,cavepocket8,cavepocket10,cavepocket11,cavepocket12,cavepocket13,cavepocket14,cavepocket15,cavepocket16,cavepocket17)
+SmallLake(minecraft:lava,6,33.0,1,8)
+CustomObject(SmallLake1,SmallLake2,SmallLake3,SmallLake4,SmallLake5,SmallLake6,SmallLake7,SmallLake8,SmallLake9,SmallLake10,SmallLake11,SmallLake12)
+CustomObject(OakForestEnchanted1,OakForestEnchanted2,OakForestEnchanted3,OakForestEnchanted4,OakForestEnchanted5,OakForestEnchanted6,OakForestEnchanted7)
+CustomStructure(TotemBase,0.1,hugearch,0.05,GravelOreT1,1.0,WitchHutBranching,0.2,DngStart,0.03,WitchVillageBranching,0.1)
+CustomObject(PumpkinHead1,PumpkinHead2,PumpkinHead3)
+CustomObject(BushHiddenJack2,BushHiddenJack1)
+CustomObject(plainsrock4,plainsrock3,plainsrock2,plainsrock1,boulder9,boulder8,boulder7,boulder6,boulder5,boulder4,boulder3,boulder2,boulder1)
+CustomObject(ShrubOak1,ShrubOak2,ShrubOak3,ShrubOak4,ShrubOak5,ShrubOak6)
+CustomObject(HollowTreeStump1,HollowTreeStump2,HollowTreeStump3,HollowTreeStump4)
+CustomObject(OakFallenTree1,OakFallenTree2,OakFallenTree3,OakFallenTree4)
+Plant(Poppy,4,5.0,63,139,minecraft:grass,minecraft:dirt)
+Plant(Dandelion,4,5.0,63,139,minecraft:grass,minecraft:dirt)
+Plant(Lilac,2,10.0,63,139,minecraft:grass,minecraft:dirt)
+Plant(RoseBush,2,10.0,63,139,minecraft:grass,minecraft:dirt)
+Plant(Peony,2,10.0,63,139,minecraft:grass,minecraft:dirt)
+Plant(RedMushroom,1,10.0,63,139,minecraft:grass,minecraft:dirt)
+Plant(BrownMushroom,1,10.0,63,139,minecraft:grass,minecraft:dirt)
+Tree(1,BigTree,5,GroundBush,20,Tree,10)
+Boulder(minecraft:stone,2,10.0,71,111,minecraft:grass)
+Grass(minecraft:tallgrass:1,NotGrouped,8,25.0,minecraft:grass,minecraft:dirt)
+Plant(minecraft:pumpkin,1,3.0,0,139,minecraft:grass)
+Reed(minecraft:reeds,3,100.0,0,139,minecraft:grass,minecraft:dirt,minecraft:sand)
+Liquid(minecraft:water,20,100.0,19,139,minecraft:stone:0)
+Boulder(minecraft:stone,2,15.0,0,255,minecraft:grass,minecraft:dirt,minecraft:stone:0)
+Grass(Fern,NotGrouped,4,20.0,minecraft:grass,minecraft:dirt)
+Grass(Tallgrass,NotGrouped,20,50.0,minecraft:grass,minecraft:dirt)
+Plant(LargeFern,4,20.0,41,139,minecraft:grass,minecraft:dirt)
+Plant(minecraft:lit_pumpkin,4,20.0,41,139,minecraft:grass,minecraft:dirt)
+Vines(10,50.0,61,161)
+CustomObject(Geode1,Geode2,Geode3,Geode4,Geode5,Geode6)
+CustomObject(UndergroundDungeon1,UndergroundDungeon2,UndergroundDungeon3,UndergroundDungeon4,UndergroundDungeon5)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeObjects: 
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StrongholdsEnabled: true
+
+OceanMonumentsEnabled: false
+
+NetherFortressesEnabled: false
+
+MansionsEnabled: false
+
+VillageType: disabled
+
+MineshaftType: normal
+
+MineshaftRarity: 0.3
+
+RareBuildingType: swampHut
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: [{"mob": "spider", "weight": 50, "min": 4, "max": 4}, {"mob": "zombie", "weight": 50, "min": 4, "max": 4}, {"mob": "skeleton", "weight": 50, "min": 4, "max": 4}, {"mob": "creeper", "weight": 50, "min": 4, "max": 4}, {"mob": "slime", "weight": 50, "min": 4, "max": 4}, {"mob": "enderman", "weight": 5, "min": 1, "max": 4}, {"mob": "witch", "weight": 25, "min": 1, "max": 4}]
+
+SpawnCreatures: [{"mob": "sheep", "weight": 12, "min": 4, "max": 4}, {"mob": "pig", "weight": 10, "min": 4, "max": 4}, {"mob": "chicken", "weight": 10, "min": 4, "max": 4}, {"mob": "cow", "weight": 8, "min": 4, "max": 4}]
+
+SpawnWaterCreatures: [{"mob": "squid", "weight": 10, "min": 4, "max": 4}]
+
+SpawnAmbientCreatures: [{"mob": "bat", "weight": 10, "min": 8, "max": 8}]
+

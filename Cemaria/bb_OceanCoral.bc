@@ -1,0 +1,242 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+
+ResourceInheritance: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 8
+
+BiomeRarity: 82
+
+BiomeColor: #000070
+
+ReplaceToBiomeName: Deep Ocean
+
+####################
+# Isle biomes only #
+####################
+
+IsleInBiome: Ocean
+
+BiomeSizeWhenIsle: 4
+
+BiomeRarityWhenIsle: 80
+
+######################
+# Border biomes only #
+######################
+
+BiomeIsBorder: 
+
+NotBorderNear: 
+
+BiomeSizeWhenBorder: 4
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeHeight: -2.46
+
+BiomeVolatility: 0.15
+
+SmoothRadius: 2
+
+MaxAverageHeight: 0.0
+
+MaxAverageDepth: -0.7
+
+Volatility1: -2.0
+
+Volatility2: -1.0
+
+VolatilityWeight1: 2.5
+
+VolatilityWeight2: 2.45
+
+DisableBiomeHeight: false
+
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+########################
+# ImprovedRivers:false #
+########################
+
+RiverBiome: 
+
+#######################
+# ImprovedRivers:true #
+#######################
+
+RiverHeight: -2.0
+
+RiverVolatility: 0.1
+
+RiverWaterLevel: 63
+
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StoneBlock: minecraft:stone
+
+SurfaceBlock: minecraft:sand
+
+GroundBlock: minecraft:sandstone
+
+SurfaceAndGroundControl: minecraft:dirt, minecraft:dirt, -1.5, minecraft:gravel, minecraft:dirt, -1.1, minecraft:prismarine, minecraft:prismarine, -0.8 
+
+ReplacedBlocks: (minecraft:sand,minecraft:stone,65,255),(minecraft:dirt,minecraft:stone,65,255),(minecraft:gravel,minecraft:stone,65,255),(minecraft:air,minecraft:lava,1,10)
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: false
+
+WaterLevelMax: 63
+
+WaterLevelMin: 0
+
+WaterBlock: minecraft:water
+
+IceBlock: minecraft:ice
+
+CooledLavaBlock: minecraft:lava
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeTemperature: 0.5
+
+BiomeWetness: 0.5
+
+SkyColor: #7BA5FF
+
+WaterColor: #FFFFFF
+
+GrassColor: #FFFFFF
+
+GrassColorIsMultiplier: true
+
+FoliageColor: #FFFFFF
+
+FoliageColorIsMultiplier: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Dungeon(8,100.0,0,160)
+Ore(minecraft:coal_ore,17,20,100.0,0,127,minecraft:stone:0)
+Ore(minecraft:iron_ore,9,20,100.0,0,63,minecraft:stone:0)
+Ore(minecraft:gold_ore,9,2,100.0,0,31,minecraft:stone:0)
+Ore(minecraft:redstone_ore,8,8,100.0,0,15,minecraft:stone:0)
+Ore(minecraft:diamond_ore,8,1,100.0,0,15,minecraft:stone:0)
+Ore(minecraft:lapis_ore,7,1,100.0,0,15,minecraft:stone:0)
+Ore(minecraft:emerald_ore,7,1,75.0,4,32,minecraft:stone:0)
+Ore(minecraft:dirt,32,20,50.0,0,255,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:gravel,32,10,50.0,0,255,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:clay,8,10,50.0,0,255,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:sand,8,10,50.0,0,255,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:stone:5,32,20,100.0,0,69,minecraft:stone:0)
+Ore(minecraft:stone:3,32,20,100.0,0,69,minecraft:stone:0)
+Ore(minecraft:stone:1,32,20,100.0,0,69,minecraft:stone:0)
+Ore(minecraft:prismarine,12,80,66.0,0,56,minecraft:sand)
+SmallLake(minecraft:lava,6,33.0,1,8)
+CustomObject(CoralClutter1,CoralClutter2,CoralClutter3)
+CustomObject(CoralSmall1,CoralSmall2,CoralSmall3,CoralSmall4,CoralSmall5,CoralSmall6,CoralClutter1,CoralClutter2,CoralClutter3)
+CustomObject(CoralSmall1,CoralSmall2,CoralSmall3,CoralSmall4,CoralSmall5,CoralSmall6,CoralPlant1,CoralPlant2,CoralPlant3,CoralPlant4,CoralCave1,CoralClutter1,CoralClutter2,CoralClutter3)
+UnderWaterOre(minecraft:sand,7,3,33.0,minecraft:dirt,minecraft:grass,minecraft:gravel)
+UnderWaterOre(minecraft:clay,4,1,33.0,minecraft:dirt,minecraft:clay,minecraft:sand,minecraft:gravel)
+UnderWaterOre(minecraft:gravel,6,1,33.0,minecraft:dirt,minecraft:grass,minecraft:sand,minecraft:gravel)
+CustomObject(BigStoneRock3,BigStoneRock2,BigStoneRock1)
+CustomStructure(GravelOreOceanT1,1.0,SeaBranching,0.2,SeaTemple2,0.1)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeObjects: 
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StrongholdsEnabled: true
+
+OceanMonumentsEnabled: false
+
+NetherFortressesEnabled: false
+
+MansionsEnabled: false
+
+VillageType: disabled
+
+MineshaftType: disabled
+
+MineshaftRarity: 0.3
+
+RareBuildingType: disabled
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: []
+
+SpawnCreatures: []
+
+SpawnWaterCreatures: []
+
+SpawnAmbientCreatures: []
+

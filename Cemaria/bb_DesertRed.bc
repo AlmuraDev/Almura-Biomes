@@ -1,0 +1,248 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+
+ResourceInheritance: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 5
+
+BiomeRarity: 99
+
+BiomeColor: #D25F12
+
+ReplaceToBiomeName: Desert
+
+####################
+# Isle biomes only #
+####################
+
+IsleInBiome: 
+
+BiomeSizeWhenIsle: 5
+
+BiomeRarityWhenIsle: 97
+
+######################
+# Border biomes only #
+######################
+
+BiomeIsBorder: 
+
+NotBorderNear: 
+
+BiomeSizeWhenBorder: 5
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeHeight: -1.66
+
+BiomeVolatility: 0.8
+
+SmoothRadius: 6
+
+MaxAverageHeight: 0.0
+
+MaxAverageDepth: 0.0
+
+Volatility1: -1.0
+
+Volatility2: -1.0
+
+VolatilityWeight1: 2.5
+
+VolatilityWeight2: 2.45
+
+DisableBiomeHeight: false
+
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+########################
+# ImprovedRivers:false #
+########################
+
+RiverBiome: 
+
+#######################
+# ImprovedRivers:true #
+#######################
+
+RiverHeight: -2.0
+
+RiverVolatility: 0.1
+
+RiverWaterLevel: 63
+
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StoneBlock: minecraft:stone
+
+SurfaceBlock: minecraft:gravel
+
+GroundBlock: minecraft:hardened_clay
+
+SurfaceAndGroundControl: 
+
+ReplacedBlocks: (minecraft:gravel,minecraft:sand:1,63,76),(minecraft:gravel,minecraft:hardened_clay,77,111),(minecraft:air,minecraft:lava,1,10),(minecraft:hardened_clay,minecraft:stained_hardened_clay:1,61,71),(minecraft:hardened_clay,minecraft:stained_hardened_clay,72,72),(minecraft:hardened_clay,minecraft:stained_hardened_clay:1,73,75),(minecraft:hardened_clay,minecraft:stained_hardened_clay,76,76),(minecraft:hardened_clay,minecraft:stained_hardened_clay:1,77,82),(minecraft:hardened_clay,minecraft:stained_hardened_clay,83,85),(minecraft:hardened_clay,minecraft:stained_hardened_clay:12,86,90),(minecraft:hardened_clay,minecraft:stained_hardened_clay:4,91,94),(minecraft:hardened_clay,minecraft:stained_hardened_clay:14,95,97),(minecraft:hardened_clay,minecraft:stained_hardened_clay,98,99),(minecraft:hardened_clay,minecraft:stained_hardened_clay:14,100,106),(minecraft:hardened_clay,minecraft:stained_hardened_clay,109,111),(minecraft:hardened_clay,minecraft:stained_hardened_clay:1,112,115),(minecraft:hardened_clay,minecraft:stained_hardened_clay:7,116,118),(minecraft:hardened_clay,minecraft:stained_hardened_clay:1,119,255)
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: true
+
+WaterLevelMax: 74
+
+WaterLevelMin: 0
+
+WaterBlock: minecraft:water
+
+IceBlock: minecraft:ice
+
+CooledLavaBlock: minecraft:lava
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeTemperature: 2.0
+
+BiomeWetness: 0.0
+
+SkyColor: #7BA5FF
+
+WaterColor: #FFFFFF
+
+GrassColor: #FFFFFF
+
+GrassColorIsMultiplier: true
+
+FoliageColor: #FFFFFF
+
+FoliageColorIsMultiplier: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Dungeon(8,100.0,0,160)
+Ore(minecraft:coal_ore,17,20,100.0,0,127,minecraft:stone:0)
+Ore(minecraft:iron_ore,9,20,100.0,0,63,minecraft:stone:0)
+Ore(minecraft:gold_ore,9,2,100.0,0,31,minecraft:stone:0)
+Ore(minecraft:redstone_ore,8,8,100.0,0,15,minecraft:stone:0)
+Ore(minecraft:diamond_ore,8,1,100.0,0,15,minecraft:stone:0)
+Ore(minecraft:lapis_ore,7,1,100.0,0,15,minecraft:stone:0)
+Ore(minecraft:emerald_ore,7,1,75.0,4,32,minecraft:stone:0)
+Ore(minecraft:dirt,32,20,50.0,0,64,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:gravel,32,10,50.0,0,64,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:clay,8,10,50.0,0,64,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:sand,8,10,50.0,0,64,minecraft:stone:0,minecraft:hardened_clay)
+Ore(minecraft:stone:5,32,20,100.0,0,69,minecraft:stone:0)
+Ore(minecraft:stone:3,32,20,100.0,0,69,minecraft:stone:0)
+Ore(minecraft:stone:1,32,20,100.0,0,69,minecraft:stone:0)
+Ore(minecraft:sand:1,15,75,100.0,63,91,minecraft:gravel)
+UnderGroundLake(25,60,2,5.0,0,61)
+UnderWaterOre(minecraft:sand,7,4,100.0,minecraft:dirt,minecraft:grass)
+UnderWaterOre(minecraft:gravel,8,1,100.0,minecraft:dirt,minecraft:stone:0)
+CustomObject(cavepocket1Copy,cavepocket2Copy,cavepocket3Copy,cavepocket9Copy,cavepocket4,cavepocket5,cavepocket6,cavepocket7,cavepocket8,cavepocket10,cavepocket11,cavepocket12,cavepocket13,cavepocket14,cavepocket15,cavepocket16,cavepocket17)
+SmallLake(minecraft:lava,6,33.0,1,8)
+CustomObject(VolcanoHardClay1,VolcanoHardClay2)
+CustomObject(claydungeon1,claydungeon2,claydungeon3,claydungeon4,claydungeon5)
+Grass(DeadBush,NotGrouped,4,10.0,minecraft:sand,minecraft:hardened_clay,minecraft:stained_hardened_clay,minecraft:sandstone:0)
+CustomStructure(RedDesertBranching,0.08,DngStart,0.03)
+CustomObject(ClayRockSmall1,ClayRockSmall2,ClayRockSmall3,ClayRockSmall4,ClayRockSmall5,ClayRockSmall6)
+CustomObject(ClayRockSmall1,ClayRockSmall2,ClayRockSmall3,ClayRockSmall4,ClayRockSmall5,ClayRockSmall6)
+CustomObject(UndergroundDungeon1,UndergroundDungeon2,UndergroundDungeon3,UndergroundDungeon4,UndergroundDungeon5)
+Reed(minecraft:reeds,3,100.0,0,139,minecraft:grass,minecraft:dirt,minecraft:sand)
+Cactus(minecraft:cactus,10,100.0,0,139,minecraft:sand)
+Well(minecraft:sandstone,minecraft:stone_slab:1,minecraft:water,1,0.1,13,139,minecraft:sand)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeObjects: 
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StrongholdsEnabled: true
+
+OceanMonumentsEnabled: false
+
+NetherFortressesEnabled: false
+
+MansionsEnabled: false
+
+VillageType: savanna
+
+MineshaftType: mesa
+
+MineshaftRarity: 0.3
+
+RareBuildingType: disabled
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: [{"mob": "spider", "weight": 100, "min": 4, "max": 4}, {"mob": "zombie", "weight": 100, "min": 4, "max": 4}, {"mob": "skeleton", "weight": 100, "min": 4, "max": 4}, {"mob": "creeper", "weight": 100, "min": 4, "max": 4}, {"mob": "slime", "weight": 100, "min": 4, "max": 4}, {"mob": "enderman", "weight": 10, "min": 1, "max": 4}, {"mob": "witch", "weight": 5, "min": 1, "max": 1}]
+
+SpawnCreatures: [{"mob": "rabbit", "weight": 4, "min": 2, "max": 3}]
+
+SpawnWaterCreatures: [{"mob": "squid", "weight": 10, "min": 4, "max": 4}]
+
+SpawnAmbientCreatures: [{"mob": "bat", "weight": 10, "min": 8, "max": 8}]
+
