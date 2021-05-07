@@ -439,14 +439,13 @@ RareBuildingType: disabled
 # changes to this setting are ignored and overwritten.
 
 # The monsters (skeletons, zombies, etc.) that spawn in this biome
-SpawnMonsters: []
+SpawnMonsters: [{"mob": "mocreatures.caveogre", "weight": 5, "min": 1, "max": 4}, {"mob": "mocreatures.fireogre", "weight": 6, "min": 1, "max": 4}, {"mob": "mocreatures.greenogre", "weight": 8, "min": 1, "max": 4}, {"mob": "mocreatures.rat", "weight": 7, "min": 1, "max": 4}, {"mob": "mocreatures.werewolf", "weight": 6, "min": 1, "max": 4}, {"mob": "Zombie", "weight": 25, "min": 1, "max": 4}, {"mob": "Skeleton", "weight": 25, "min": 1, "max": 4}, {"mob": "Enderman", "weight": 15, "min": 1, "max": 4}, {"mob": "Creeper", "weight": 25, "min": 1, "max": 4}, {"mob": "Spider", "weight": 25, "min": 1, "max": 4}]
 
 # The friendly creatures (cows, pigs, etc.) that spawn in this biome
-SpawnCreatures: []
+SpawnCreatures: [{"mob": "mocreatures.bird", "weight": 15, "min": 1, "max": 4}, {"mob": "mocreatures.blackbear", "weight": 6, "min": 1, "max": 4}, {"mob": "mocreatures.deer", "weight": 8, "min": 2, "max": 5}, {"mob": "mocreatures.fox", "weight": 8, "min": 1, "max": 4}, {"mob": "mocreatures.boar", "weight": 8, "min": 1, "max": 4}, {"mob": "mocreatures.panther", "weight": 6, "min": 1, "max": 2}, {"mob": "mocreatures.turkey", "weight": 15, "min": 2, "max": 6}, {"mob": "mocreatures.wildhorse", "weight": 8, "min": 1, "max": 2}]
 
 # The water creatures (only squids in vanilla) that spawn in this biome
-SpawnWaterCreatures: []
+SpawnWaterCreatures: [{"mob": "mocreatures.bass", "weight": 25, "min": 3, "max": 5}]
 
 # The ambient creatures (only bats in vanila) that spawn in this biome
-SpawnAmbientCreatures: []
-
+SpawnAmbientCreatures: [{"mob": "mocreatures.bee", "weight": 8, "min": 1, "max": 4}, {"mob": "mocreatures.firefly", "weight": 8, "min": 1, "max": 3}, {"mob": "mocreatures.roach", "weight": 7, "min": 1, "max": 2}]
