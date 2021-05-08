@@ -438,14 +438,15 @@ RareBuildingType: disabled
 # changes to this setting are ignored and overwritten.
 
 # The monsters (skeletons, zombies, etc.) that spawn in this biome
-SpawnMonsters: []
+SpawnMonsters: [{"mob": "mocreatures.scorpion", "weight": 25, "min": 1, "max": 4}, {"mob": "mocreatures.rat", "weight": 25, "min": 1, "max": 4}, {"mob": "mocreatures.Wwolf", "weight": 25, "min": 1, "max": 4}, {"mob": "mocreatures.silverskeleton", "weight": 15, "min": 1, "max": 2}, {"mob": "skeleton", "weight": 25, "min": 1, "max": 4}, {"mob": "mocreatures.caveogre", "weight": 25, "min": 1, "max": 4}]
 
 # The friendly creatures (cows, pigs, etc.) that spawn in this biome
-SpawnCreatures: []
+SpawnCreatures: [{"mob": "mocreatures.duck", "weight": 25, "min": 1, "max": 4},{"mob": "mocreatures.bunny", "weight": 25, "min": 1, "max": 4},{"mob": "mocreatures.turtle", "weight": 25, "min": 1, "max": 4},{"mob": "Parrot", "weight": 25, "min": 1, "max": 4}, {"mob": "Mule", "weight": 15, "min": 1, "max": 4}]
 
 # The water creatures (only squids in vanilla) that spawn in this biome
-SpawnWaterCreatures: []
+SpawnWaterCreatures: [{"mob": "mocreatures.cod", "weight": 25, "min": 3, "max": 7},{"mob": "mocreatures.salmon", "weight": 25, "min": 2, "max": 5}]
 
 # The ambient creatures (only bats in vanila) that spawn in this biome
-SpawnAmbientCreatures: []
+SpawnAmbientCreatures: [{"mob": "mocreatures.crab", "weight": 25, "min": 1, "max": 4},{"mob": "mocreatures.snail", "weight": 25, "min": 1, "max": 4}, {"mob": "mocreatures.butterfly", "weight": 25, "min": 1, "max": 4}, {"mob": "mocreatures.cricket", "weight": 25, "min": 1, "max": 4}]
+
 

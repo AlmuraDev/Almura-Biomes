@@ -445,14 +445,14 @@ RareBuildingType: disabled
 # your changes are ignored.
 
 # The monsters (skeletons, zombies, etc.) that spawn in this biome
-SpawnMonsters: []
+SpawnMonsters: [{"mob": "mocreatures.caveogre", "weight": 5, "min": 1, "max": 4}, {"mob": "mocreatures.biggolem", "weight": 3, "min": 1, "max": 4}, {"mob": "mocreatures.werewolf", "weight": 6, "min": 1, "max": 4}, {"mob": "mocreatures.rat", "weight": 7, "min": 1, "max": 4}, {"mob": "Spider", "weight": 25, "min": 2, "max": 4}, {"mob": "Zombie", "weight": 25, "min": 2, "max": 4}, {"mob": "Skeleton", "weight": 25, "min": 2, "max": 4}, {"mob": "Creeper", "weight": 25, "min": 2, "max": 4}, {"mob": "Slime", "weight": 10, "min": 4, "max": 4}, {"mob": "Enderman", "weight": 10, "min": 1, "max": 4}, {"mob": "Witch", "weight": 5, "min": 1, "max": 1}, {"mob": "Snowman", "weight": 15, "min": 2, "max": 4}]
 
 # The friendly creatures (cows, pigs, etc.) that spawn in this biome
-SpawnCreatures: []
+SpawnCreatures: [{"mob": "mocreatures.wildpolarbear", "weight": 6, "min": 1, "max": 4}, {"mob": "mocreatures.bunny", "weight": 8, "min": 2, "max": 3}, {"mob": "PolarBear", "weight": 5, "min": 1, "max": 2}, {"mob": "Wolf", "weight": 5, "min": 2, "max": 4}, {"mob": "Rabbit", "weight": 10, "min": 2, "max": 4}]
 
 # The water creatures (only squids in vanilla) that spawn in this biome
-SpawnWaterCreatures: []
+SpawnWaterCreatures: [{"mob": "mocreatures.bass", "weight": 25, "min": 2, "max": 10}, {"mob": "mocreatures.salmon", "weight": 25, "min": 2, "max": 10}, {"mob": "mocreatures.fishy", "weight": 25, "min": 1, "max": 4}, {"mob": "Squid", "weight": 25, "min": 2, "max": 4}]
 
 # The ambient creatures (only bats in vanila) that spawn in this biome
-SpawnAmbientCreatures: [{"mob": "Bat", "weight": 10, "min": 8, "max": 8}]
+SpawnAmbientCreatures: []
 
